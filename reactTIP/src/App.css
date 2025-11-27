@@ -1,0 +1,114 @@
+.App {
+  width: 300px;
+  height: 300px;
+  border: 10px solid black;
+  border-radius: 50%;
+  position: relative;
+  background-color: white;
+}
+
+.clock {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.hour {
+  position: absolute;
+  left: 50%;
+  width: 4px;
+  height: 100%;
+  transform-origin: center;
+}
+
+.hour-number {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  font-weight: 900;
+  color: black;
+}
+
+.hour-1 { transform: rotate(30deg); }
+.hour-1 .hour-number { transform: translateX(-50%) rotate(-30deg); }
+
+.hour-2 { transform: rotate(60deg); }
+.hour-2 .hour-number { transform: translateX(-50%) rotate(-60deg); }
+
+.hour-3 { transform: rotate(90deg); }
+.hour-3 .hour-number { transform: translateX(-50%) rotate(-90deg); }
+
+.hour-4 { transform: rotate(120deg); }
+.hour-4 .hour-number { transform: translateX(-50%) rotate(-120deg); }
+
+.hour-5 { transform: rotate(150deg); }
+.hour-5 .hour-number { transform: translateX(-50%) rotate(-150deg); }
+
+.hour-6 { transform: rotate(180deg); }
+.hour-6 .hour-number { transform: translateX(-50%) rotate(-180deg); }
+
+.hour-7 { transform: rotate(210deg); }
+.hour-7 .hour-number { transform: translateX(-50%) rotate(-210deg); }
+
+.hour-8 { transform: rotate(240deg); }
+.hour-8 .hour-number { transform: translateX(-50%) rotate(-240deg); }
+
+.hour-9 { transform: rotate(270deg); }
+.hour-9 .hour-number { transform: translateX(-50%) rotate(-270deg); }
+
+.hour-10 { transform: rotate(300deg); }
+.hour-10 .hour-number { transform: translateX(-50%) rotate(-300deg); }
+
+.hour-11 { transform: rotate(330deg); }
+.hour-11 .hour-number { transform: translateX(-50%) rotate(-330deg); }
+
+.hour-12 { transform: rotate(0deg); }
+.hour-12 .hour-number { transform: translateX(-50%) rotate(0deg); }
+
+.arrow-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 15px;
+  height: 15px;
+  background: black;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+}
+
+.hour-arr {
+  width: 6px;
+  height: 30%;
+  background: black;
+  z-index: 3;
+  position: absolute;
+  bottom: 50%;
+  left: 50%;
+  transform-origin: bottom center;
+  border-radius: 4px 4px 2px 2px;
+}
+
+.minute-arr {
+  width: 4px;
+  height: 40%;
+  background: black;
+  z-index: 2;
+  position: absolute;
+  bottom: 50%;
+  left: 50%;
+  transform-origin: bottom center;
+  border-radius: 4px 4px 2px 2px;
+}
+
+.second-arr {
+  width: 2px;
+  height: 45%;
+  background: red;
+  z-index: 1;
+  position: absolute;
+  bottom: 50%;
+  left: 50%;
+  transform-origin: bottom center;
+  border-radius: 4px 4px 2px 2px;
+}
